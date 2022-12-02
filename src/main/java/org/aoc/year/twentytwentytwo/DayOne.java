@@ -1,19 +1,16 @@
 package org.aoc.year.twentytwentytwo;
 
-import org.aoc.util.InputRetriever;
-import org.aoc.year.BaseDay;
-
 import java.util.*;
 
 public class DayOne extends BaseDay {
 
-    public DayOne(int year) {
-        super(new InputRetriever(year));
+    public DayOne(int day) {
+        super(day);
     }
 
     @Override
     public void solve(){
-        int[] input = retriever.getInputAsIntegerArray(1);
+        int[] input = retriever.getInputAsIntegerArray();
         List<Integer> combinedCalories = getElvesTotalCalories(input);
         Collections.sort(combinedCalories, Collections.reverseOrder());
         int topThree = getTopThreeCalories(combinedCalories);

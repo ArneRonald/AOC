@@ -1,17 +1,14 @@
 package org.aoc.year.twentytwentytwo;
 
-import org.aoc.util.InputRetriever;
-import org.aoc.year.BaseDay;
-
 public class DayTwo extends BaseDay {
 
-    public DayTwo(int year) {
-        super(new InputRetriever(year));
+    public DayTwo(int day) {
+        super(day);
     }
 
     @Override
     public void solve() {
-        String[] intput = retriever.getInputAsStringArray(2);
+        String[] intput = retriever.getInputAsStringArray();
         String[] fauxInput = new String[] {"A Y","B X","C Z"};
         int partOne = playAllRounds(intput);
         int partTwo = playAllRoundsTwo(intput);

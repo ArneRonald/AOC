@@ -4,8 +4,8 @@ import org.aoc.util.InputRetriever;
 
 public abstract class BaseDay {
 
-    public BaseDay(InputRetriever inputRetriever){
-        retriever = inputRetriever;
+    public BaseDay(int year, int day){
+        retriever = new InputRetriever(year, day);
     }
 
     public InputRetriever retriever;

@@ -16,23 +16,26 @@ public class InputRetriever {
 
     private int year;
 
-    public InputRetriever(int year) {
+    private int day;
+
+    public InputRetriever(int year, int day) {
         this.year = year;
+        this.day = day;
     }
 
-    public List<String> getInputAsStringList(int day) {
-        String[] inputs = getInputAsStringArray(day);
+    public List<String> getInputAsStringList() {
+        String[] inputs = getInputAsStringArray();
         List<String> input = Arrays.asList(inputs);
         return input;
     }
 
-    public String[] getInputAsStringArray(int day) {
-        String inputString = FetchInput(day);
+    public String[] getInputAsStringArray() {
+        String inputString = FetchInput(this.day);
         String[] inputs = inputString.split("\n");
         return inputs;
     }
 
-    public int[] getInputAsIntegerArray(int day) {
+    public int[] getInputAsIntegerArray() {
         String inputString = FetchInput(day);
         String[] inputs = inputString.split("\n");
         int[] numbers = new int[inputs.length];
@@ -46,8 +49,8 @@ public class InputRetriever {
         return numbers;
     }
 
-    public List<Integer> getInputAsIntegerList(int day){
-        int[] input = getInputAsIntegerArray(day);
+    public List<Integer> getInputAsIntegerList(){
+        int[] input = getInputAsIntegerArray();
         List<Integer> inputs = new LinkedList<>();
         for (int i: input) {
             inputs.add(i);
