@@ -1,8 +1,15 @@
-package org.aoc.days;
+package org.aoc.year.twentytwentytwo;
+
+import org.aoc.util.InputRetriever;
+import org.aoc.year.BaseDay;
 
 import java.util.*;
 
 public class DayOne extends BaseDay {
+
+    public DayOne(int year) {
+        super(new InputRetriever(year));
+    }
 
     @Override
     public void solve(){

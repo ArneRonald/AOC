@@ -14,6 +14,12 @@ import java.util.List;
 
 public class InputRetriever {
 
+    private int year;
+
+    public InputRetriever(int year) {
+        this.year = year;
+    }
+
     public List<String> getInputAsStringList(int day) {
         String[] inputs = getInputAsStringArray(day);
         List<String> input = Arrays.asList(inputs);
@@ -53,7 +59,7 @@ public class InputRetriever {
         String result;
         CloseableHttpClient client = HttpClientBuilder.create().build();
 
-        HttpGet request = new HttpGet("https://adventofcode.com/2022/day/"+ day +"/input");
+        HttpGet request = new HttpGet("https://adventofcode.com/"+ year+"/day/"+ day +"/input");
 
         request.addHeader("cookie", "_ga=GA1.2.355518904.1669202280; session=53616c7465645f5f518da40fb314078f88b0c5098f306bd4f08d58f80997c29f741d5c0ec4327950938fa7324dc0cadb13d31508a9d6e4c61a77bc4510e792e0; _gid=GA1.2.61648728.1669879033; _gat=1");
 
