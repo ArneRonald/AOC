@@ -4,8 +4,8 @@ import java.util.*;
 
 public class DayOne extends BaseDay {
 
-    public DayOne(int day) {
-        super(day);
+    public DayOne() {
+        super(1);
     }
 
     @Override

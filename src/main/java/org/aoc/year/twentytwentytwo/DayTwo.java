@@ -2,8 +2,8 @@ package org.aoc.year.twentytwentytwo;
 
 public class DayTwo extends BaseDay {
 
-    public DayTwo(int day) {
-        super(day);
+    public DayTwo() {
+        super(2);
     }
 
     @Override
