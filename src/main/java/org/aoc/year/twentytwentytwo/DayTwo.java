@@ -1,4 +1,4 @@
-package org.aoc.year.twentytwentytwo.daytwo;
+package org.aoc.year.twentytwentytwo;
 
 import org.aoc.year.twentytwentytwo.BaseDay;
 
@@ -14,7 +14,7 @@ public class DayTwo extends BaseDay {
         String[] fauxInput = new String[] {"A Y","B X","C Z"};
         int partOne = playAllRounds(intput);
         int partTwo = playAllRoundsTwo(intput);
-        System.out.println("--Day Two--");
+
         System.out.println("Part1: " + partOne);
         System.out.println("Part2: " + partTwo);
     }

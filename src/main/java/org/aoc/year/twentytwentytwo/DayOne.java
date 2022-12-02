@@ -1,4 +1,4 @@
-package org.aoc.year.twentytwentytwo.dayone;
+package org.aoc.year.twentytwentytwo;
 
 import org.aoc.year.twentytwentytwo.BaseDay;
 
@@ -16,7 +16,7 @@ public class DayOne extends BaseDay {
         List<Integer> combinedCalories = getElvesTotalCalories(input);
         Collections.sort(combinedCalories, Collections.reverseOrder());
         int topThree = getTopThreeCalories(combinedCalories);
-        System.out.println("--Day One--");
+
         System.out.println("Part1: " + combinedCalories.get(0));
         System.out.println("Part2: " + topThree);
     }

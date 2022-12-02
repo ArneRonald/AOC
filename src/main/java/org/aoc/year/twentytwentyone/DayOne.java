@@ -1,4 +1,4 @@
-package org.aoc.year.twentytwentyone.dayone;
+package org.aoc.year.twentytwentyone;
 
 import org.aoc.year.twentytwentyone.BaseDay;
 
@@ -14,7 +14,7 @@ public class DayOne extends BaseDay {
         int[] fauxInput = new int[] {199, 200, 208, 210, 200, 207, 240, 269, 260, 263};
         int result = determineAmountOfIncreases(input);
         int part2 = determineAmountOfSlidingIncreases(input);
-        System.out.println("--Day one--");
+
         System.out.println("Part 1: " + result);
         System.out.println("Part 2: " + part2);
     }
