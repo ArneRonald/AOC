@@ -1,4 +1,6 @@
-package org.aoc.year.twentytwentytwo;
+package org.aoc.year.twentytwentytwo.daytwo;
+
+import org.aoc.year.twentytwentytwo.BaseDay;
 
 public class DayTwo extends BaseDay {
 

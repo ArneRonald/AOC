@@ -1,4 +1,6 @@
-package org.aoc.year.twentytwentytwo;
+package org.aoc.year.twentytwentytwo.dayone;
+
+import org.aoc.year.twentytwentytwo.BaseDay;
 
 import java.util.*;
 

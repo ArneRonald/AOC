@@ -1,15 +1,10 @@
 package org.aoc;
 
-import org.aoc.year.twentytwentytwo.DayOne;
-import org.aoc.year.twentytwentytwo.DayTwo;
+import org.aoc.year.twentytwentyone.Solution;
 
 public class Application {
     public static void main(String[] args) {
-        System.out.println("----2021----");
-        new org.aoc.year.twentytwentyone.DayOne().solve();
-
-        System.out.println("----2022----");
-        new DayOne().solve();
-        new DayTwo().solve();
+        new Solution().run();
+        new org.aoc.year.twentytwentytwo.Solution().run();
     }
 }
