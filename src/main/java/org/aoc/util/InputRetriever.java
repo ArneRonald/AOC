@@ -14,19 +14,19 @@ import java.util.List;
 
 public class InputRetriever {
 
-    public List<String> getInputAsStringList(String day) {
+    public List<String> getInputAsStringList(int day) {
         String[] inputs = getInputAsStringArray(day);
         List<String> input = Arrays.asList(inputs);
         return input;
     }
 
-    public String[] getInputAsStringArray(String day) {
+    public String[] getInputAsStringArray(int day) {
         String inputString = FetchInput(day);
         String[] inputs = inputString.split("\n");
         return inputs;
     }
 
-    public int[] getInputAsIntegerArray(String day) {
+    public int[] getInputAsIntegerArray(int day) {
         String inputString = FetchInput(day);
         String[] inputs = inputString.split("\n");
         int[] numbers = new int[inputs.length];
@@ -40,7 +40,7 @@ public class InputRetriever {
         return numbers;
     }
 
-    public List<Integer> getInputAsIntegerList(String day){
+    public List<Integer> getInputAsIntegerList(int day){
         int[] input = getInputAsIntegerArray(day);
         List<Integer> inputs = new LinkedList<>();
         for (int i: input) {
@@ -49,7 +49,7 @@ public class InputRetriever {
         return inputs;
     }
 
-    public String FetchInput(String day) {
+    public String FetchInput(int day) {
         String result;
         CloseableHttpClient client = HttpClientBuilder.create().build();
 

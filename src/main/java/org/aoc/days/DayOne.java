@@ -1,14 +1,12 @@
 package org.aoc.days;
 
-import org.aoc.util.InputRetriever;
-
 import java.util.*;
 
-public class DayOne {
+public class DayOne extends BaseDay {
 
+    @Override
     public void solve(){
-        InputRetriever retriever = new InputRetriever();
-        int[] input = retriever.getInputAsIntegerArray("1");
+        int[] input = retriever.getInputAsIntegerArray(1);
         List<Integer> combinedCalories = getElvesTotalCalories(input);
         Collections.sort(combinedCalories, Collections.reverseOrder());
         int topThree = getTopThreeCalories(combinedCalories);
