@@ -8,6 +8,8 @@ public class Solution {
         new DayOne().solve();
         System.out.println("-- Day two --");
         new DayTwo().solve();
+        System.out.println("-- Day three --");
+        new DayThree().solve();
 
     }
 
