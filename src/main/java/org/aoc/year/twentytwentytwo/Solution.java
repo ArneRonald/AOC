@@ -16,6 +16,9 @@ public class Solution {
 
         System.out.println("-- Day four --");
         new DayFour().solve();
+
+        System.out.println("-- Day five --");
+        new DayFive().solve();
     }
 
 }
