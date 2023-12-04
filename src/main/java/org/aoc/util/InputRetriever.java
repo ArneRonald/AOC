@@ -64,7 +64,7 @@ public class InputRetriever {
 
         HttpGet request = new HttpGet("https://adventofcode.com/"+ year+"/day/"+ day +"/input");
 
-        request.addHeader("cookie", "_ga=GA1.2.355518904.1669202280; session=53616c7465645f5f518da40fb314078f88b0c5098f306bd4f08d58f80997c29f741d5c0ec4327950938fa7324dc0cadb13d31508a9d6e4c61a77bc4510e792e0; _gid=GA1.2.61648728.1669879033; _gat=1");
+        request.addHeader("cookie", "_ga=GA1.2.1501474227.1699435046; session=53616c7465645f5fb571084e10b6e70c2c5db9dfd532e578dd8d9c7eba5a8166114ed57a0503723d6d2063b19ac19d7b258cbc327ee2ead887e64d2ed163fabb; _gid=GA1.2.1954672237.1701673595; _gat=1");
 
         try {
             HttpResponse response = client.execute(request);
